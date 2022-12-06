@@ -1,0 +1,338 @@
+// SECTION APRESENTACAO
+
+section.apresentation {
+  padding-bottom: 20rem;
+  background: #000;
+  display: flex;
+  color: #eee;
+  background: url("../images/background.jpg") no-repeat;
+  background-position: center top;
+  background-size: cover;
+  .container {
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10rem;
+    z-index: 20;
+    .left {
+      max-width: 37.2remrem;
+      h3 {
+        font-size: 2rem;
+      }
+      .name {
+        font-size: 6rem;
+        line-height: 6rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        font-size: 1.7rem;
+      }
+      button {
+        font-size: 1rem;
+        background: transparent;
+        border: 2px solid #eee;
+        color: #fff;
+        padding: 1rem 3rem;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        transition: all 0.9s ease;
+      }
+      .btn-contact {
+        color: #cccc20;
+        border: 2px solid #cccc20;
+        margin-right: 1rem;
+        &:hover{
+            background-color: #cccc20;
+            color:#000;
+        }
+      }
+      ul {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 2rem;
+        width: fit-content;
+       li {
+        border: 0.2rem solid #000;
+        padding: 0.5rem 1rem 0.2rem 1rem;
+        border-radius: 100%;
+        display: flex;
+        transition: background 0.8s ease;
+      img {
+        border-radius: 50rem;
+        width: 3rem;
+      }
+    }
+    }
+    }
+    .right {
+      img {
+        max-width: 40rem;
+        border-radius: 100rem;
+      }
+    }
+  }
+  @media(max-width: 560px){
+    .container{
+        justify-content: center;
+    }
+  }
+}
+
+.apresentation:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+}
+
+section#about {
+  padding: 15rem 0;
+  .title {
+    color: #cccc20;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    .left {
+      img {
+        max-width: 90%;
+        border-radius: 5rem;
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        font-family: "Roboto";
+        word-wrap: break-word;
+        line-height: 3rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+  @media(max-width:991px){
+    .container{
+        flex-direction: column;
+        .right{
+            margin-top: 3rem;
+        }
+    }
+  }
+  
+}
+
+section#services {
+    background-color:  #2b2b2b;;
+  margin-top: 5rem;
+  padding: 10rem 0;
+  .title {
+    text-align: center;
+    color: #cccc20;
+    font-size: 3rem;
+  }
+  .container {
+    h2 {
+      margin: 3rem 0;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+      gap: 2rem 2rem;
+      .card {
+        box-shadow: 0.1rem 0.1rem 1rem -0.4rem yellow;
+        padding: 1rem;
+        width: 32%;
+        padding: 2rem;
+        border-radius: 2rem;
+        color: #000;
+        h3 {
+          font-size: 1.9rem;
+          text-align: start;
+        }
+        p {
+          margin-top: 2rem;
+          font-size: 1.6rem;
+          text-align: start;
+        }
+      }
+    }
+  }
+  @media(max-width: 1200px){
+    .container{
+        .cards{
+            justify-content: center;
+        }
+    }
+  }
+  @media(max-width: 560px){
+    .container{
+        .cards{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         .card{
+            width: 90%;
+           
+         }
+        }
+    }
+  }
+}
+
+section#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    font-size: 3rem;
+    margin: 8rem;
+    color: #cccc20;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .contact {
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .send-email {
+    border-radius: 2rem;
+    padding: 1rem;
+    background: #131313;
+    text-align: center;
+    width: 30rem;
+    height: 20rem;
+    transition: all 0.8s ease;
+  }
+
+  .send-email:hover {
+    background-color: #000;
+  }
+  .send-email a {
+    text-decoration: none;
+    color: #eee;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    width: inherit;
+    align-items: center;
+  }
+
+  .send-linkedin {
+    background: #131313;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 30rem;
+    height: 20rem;
+    transition: all 0.8s ease;
+  }
+
+  .send-linkedin:hover {
+    background-color: #000;
+  }
+
+  .send-linkedin a {
+    text-decoration: none;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: inherit;
+    align-items: center;
+  }
+
+  .copy,
+  ul {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+  }
+  
+}
+
+footer {
+    padding: 5rem 0;
+    background: #a0a01c;;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h2{
+        color: #000;
+    }
+    span {
+        color: #000;
+      margin-top: 1rem;
+      display: block;
+      font-size: 1.7rem;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 1rem;
+    }
+    @media (max-width: 560px) {
+      padding: 5rem 0;
+      .container {
+        flex-direction: column;
+        .left {
+          text-align: center;
+          margin-bottom: 2rem;
+          span {
+            font-size: 2rem;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #cccc20 #070d12;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #a0a01c #070d12;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #a0a01c;
+    border-radius: 20px;
+    border: 3px solid #070d12;
+  }
+
+
+

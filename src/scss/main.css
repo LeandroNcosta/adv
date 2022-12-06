@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%; /*1rem = 10px */
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #000;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 143.5rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 124.8rem;
+  }
+}
+
+header {
+  background: #2b2b2b;
+  color: #fff;
+  display: flex;
+  height: 20rem;
+  width: 100%;
+  height: 9rem;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container figure {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+header .container figure img {
+  max-width: 6rem;
+  border-radius: 5rem;
+  border: 0.3rem solid #cccc20;
+}
+header .container figure p {
+  font-size: 2rem;
+  color: #cccc20;
+}
+header .container nav {
+  display: flex;
+}
+header .container nav ul {
+  display: flex;
+  gap: 0 3rem;
+  list-style: none;
+  color: #eee;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+header .container nav li:nth-child(1) a {
+  color: rgb(204, 204, 32);
+}
+@media (max-width: 560px) {
+  header .container {
+    justify-content: center;
+  }
+  header .container nav {
+    display: none;
+  }
+}
+
+section.apresentation {
+  padding-bottom: 20rem;
+  background: #000;
+  display: flex;
+  color: #eee;
+  background: url("../images/background.jpg") no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+section.apresentation .container {
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 10rem;
+  z-index: 20;
+}
+section.apresentation .container .left {
+  max-width: 37.2remrem;
+}
+section.apresentation .container .left h3 {
+  font-size: 2rem;
+}
+section.apresentation .container .left .name {
+  font-size: 6rem;
+  line-height: 6rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+section.apresentation .container .left h2 {
+  font-size: 1.7rem;
+}
+section.apresentation .container .left button {
+  font-size: 1rem;
+  background: transparent;
+  border: 2px solid #eee;
+  color: #fff;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.9s ease;
+}
+section.apresentation .container .left .btn-contact {
+  color: #cccc20;
+  border: 2px solid #cccc20;
+  margin-right: 1rem;
+}
+section.apresentation .container .left .btn-contact:hover {
+  background-color: #cccc20;
+  color: #000;
+}
+section.apresentation .container .left ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section.apresentation .container .left ul li {
+  border: 0.2rem solid #000;
+  padding: 0.5rem 1rem 0.2rem 1rem;
+  border-radius: 100%;
+  display: flex;
+  transition: background 0.8s ease;
+}
+section.apresentation .container .left ul li img {
+  border-radius: 50rem;
+  width: 3rem;
+}
+section.apresentation .container .right img {
+  max-width: 40rem;
+  border-radius: 100rem;
+}
+@media (max-width: 560px) {
+  section.apresentation .container {
+    justify-content: center;
+  }
+}
+
+.apresentation:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+}
+
+section#about {
+  padding: 15rem 0;
+}
+section#about .title {
+  color: #cccc20;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+section#about .container {
+  display: flex;
+  justify-content: space-around;
+}
+section#about .container .left img {
+  max-width: 90%;
+  border-radius: 5rem;
+}
+section#about .container .right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section#about .container .right p {
+  font-family: "Roboto";
+  word-wrap: break-word;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+@media (max-width: 991px) {
+  section#about .container {
+    flex-direction: column;
+  }
+  section#about .container .right {
+    margin-top: 3rem;
+  }
+}
+
+section#services {
+  background-color: #2b2b2b;
+  margin-top: 5rem;
+  padding: 10rem 0;
+}
+section#services .title {
+  text-align: center;
+  color: #cccc20;
+  font-size: 3rem;
+}
+section#services .container h2 {
+  margin: 3rem 0;
+  text-align: center;
+}
+section#services .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  gap: 2rem 2rem;
+}
+section#services .container .cards .card {
+  box-shadow: 0.1rem 0.1rem 1rem -0.4rem yellow;
+  padding: 1rem;
+  width: 32%;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: #000;
+}
+section#services .container .cards .card h3 {
+  font-size: 1.9rem;
+  text-align: start;
+}
+section#services .container .cards .card p {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  text-align: start;
+}
+@media (max-width: 1200px) {
+  section#services .container .cards {
+    justify-content: center;
+  }
+}
+@media (max-width: 560px) {
+  section#services .container .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#services .container .cards .card {
+    width: 90%;
+  }
+}
+
+section#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+section#contact .title {
+  font-size: 3rem;
+  margin: 8rem;
+  color: #cccc20;
+}
+section#contact h2 {
+  font-size: 2.5rem;
+}
+section#contact .contact {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+section#contact .send-email {
+  border-radius: 2rem;
+  padding: 1rem;
+  background: #131313;
+  text-align: center;
+  width: 30rem;
+  height: 20rem;
+  transition: all 0.8s ease;
+}
+section#contact .send-email:hover {
+  background-color: #000;
+}
+section#contact .send-email a {
+  text-decoration: none;
+  color: #eee;
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  width: inherit;
+  align-items: center;
+}
+section#contact .send-linkedin {
+  background: #131313;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 30rem;
+  height: 20rem;
+  transition: all 0.8s ease;
+}
+section#contact .send-linkedin:hover {
+  background-color: #000;
+}
+section#contact .send-linkedin a {
+  text-decoration: none;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: inherit;
+  align-items: center;
+}
+section#contact .copy,
+section#contact ul {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+footer {
+  padding: 5rem 0;
+  background: #a0a01c;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h2 {
+  color: #000;
+}
+footer span {
+  color: #000;
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.7rem;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1rem;
+}
+@media (max-width: 560px) {
+  footer {
+    padding: 5rem 0;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .left {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  footer .container .left span {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cccc20 #070d12;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #a0a01c #070d12;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a0a01c;
+  border-radius: 20px;
+  border: 3px solid #070d12;
+}/*# sourceMappingURL=main.css.map */
